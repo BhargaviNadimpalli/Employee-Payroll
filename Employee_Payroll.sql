@@ -24,5 +24,13 @@ Create table payroll	(
 
     use Employee_Payroll
     select * from payroll
+	--UC5 Retrieving data from particular employee
+	select Name, Salary from payroll WHERE Name='Bill'
+
+select * from payroll 
+	WHERE start BETWEEN CAST('2021-01-01' AS DATE) AND GETDATE() 
+
+select * from payroll 
+	WHERE start BETWEEN CAST('2021-01-01' AS DATE) AND CAST('2021-09-01' AS DATE) 
 	
 	
