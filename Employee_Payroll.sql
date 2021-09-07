@@ -13,11 +13,16 @@ Create table payroll	(
 	Salary money Not Null,
 	Start datetime Not Null
 	)
-	select * from payroll
+	
 	--UC3 Inserted data
+	use Employee_Payroll
 	insert into payroll(Name, Salary, Start) VALUES
 	('Billi',100000.0,'2018-01-03'),
 	('Terisa',200000.0,'2019-11-13'),
 	('Charlie',300000.0,'2021-05-21')
-	use Employee_Payroll
+	--UC4 Retrieving Data
+
+    use Employee_Payroll
+    select * from payroll
+	
 	
