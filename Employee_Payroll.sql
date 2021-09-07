@@ -33,4 +33,11 @@ select * from payroll
 select * from payroll 
 	WHERE start BETWEEN CAST('2021-01-01' AS DATE) AND CAST('2021-09-01' AS DATE) 
 	
-	
+	--UC6
+ALTER TABLE payroll ADD gender VARCHAR(1)
+ 
+update payroll set gender = 'F' WHere Name = 'Terisha'
+update payroll set gender = 'M' WHere Name = 'Charlie' or Name = 'Bill' 
+update payroll set Salary = 300000 WHere Name = 'Terisha'
+use Employee_Payroll
+ select * from payroll 
