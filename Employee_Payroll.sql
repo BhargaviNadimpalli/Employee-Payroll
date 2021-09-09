@@ -22,7 +22,7 @@ Create table payroll	(
 	('Charlie',300000.0,'2021-05-21')
 	--UC4 Retrieving Data
 
-    use Employee_Payroll
+    
     select * from payroll
 	--UC5 Retrieving data from particular employee
 	select Name, Salary from payroll WHERE Name='Bill'
